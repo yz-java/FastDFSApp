@@ -24,7 +24,7 @@ public class ContextListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         logger.info("servlet容器启动");
-        String path = this.getClass().getResource("/config.json").getPath();
+        String path = this.getClass().getClassLoader().getResource("config.json").getPath();
         logger.info("config.json文件path路径："+path);
         try {
             String fileToString = FileUtils.readFileToString(new File(path), "utf-8");

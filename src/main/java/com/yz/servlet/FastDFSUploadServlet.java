@@ -86,7 +86,7 @@ public class FastDFSUploadServlet extends BaseServlet {
                     logger.info("文件名："+filename);
 
                     String[] split = filename.split("\\.");
-                    String fileType = split[1];
+                    String fileType = split[split.length-1];
 
                     InputStream inputStream = item.getInputStream();
 
