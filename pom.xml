@@ -12,7 +12,7 @@
     <repository>
       <id>nexus</id>
       <name>Public Repositories</name>
-      <url>http://123.56.107.180:8081/nexus/content/groups/public/</url>
+      <url>http://nexus.lingzhuworld.cn/nexus/content/groups/public/</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -20,7 +20,7 @@
     <repository>
       <id>snapshots</id>
       <name>Nexus Snapshots Repository</name>
-      <url>http://123.56.107.180:8081/nexus/content/repositories/snapshots/</url>
+      <url>http://nexus.lingzhuworld.cn/nexus/content/repositories/snapshots/</url>
     </repository>
   </repositories>
 
@@ -92,6 +92,14 @@
       <artifactId>httpclient</artifactId>
       <version>4.5.1</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.collaborne.operations/tomcat-cors-regex-filter -->
+    <dependency>
+      <groupId>com.collaborne.operations</groupId>
+      <artifactId>tomcat-cors-regex-filter</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
   </dependencies>
 
   <build>
