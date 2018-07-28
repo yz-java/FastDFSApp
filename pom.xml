@@ -8,22 +8,6 @@
   <name>FastDFSApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-  <repositories>
-    <repository>
-      <id>nexus</id>
-      <name>Public Repositories</name>
-      <url>http://nexus.lingzhuworld.cn/nexus/content/groups/public/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>snapshots</id>
-      <name>Nexus Snapshots Repository</name>
-      <url>http://nexus.lingzhuworld.cn/nexus/content/repositories/snapshots/</url>
-    </repository>
-  </repositories>
-
   <dependencies>
 
     <dependency>
